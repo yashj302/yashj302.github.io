@@ -10,6 +10,14 @@
     />
     <meta name="author" content="Yash Jain" />
     <link rel="canonical" href="https://yashj302.github.io/" />
+    <meta property="og:title" content="Yash Jain · Senior Data Engineer" />
+    <meta
+      property="og:description"
+      content="Vendor market data into governed lakehouses. Azure Databricks, Delta Lake, PySpark. $260K pipeline savings. 1M+ records a day."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yashj302.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,14 +25,16 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,640&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=4" />
   </head>
   <body>
+    <div class="grain" aria-hidden="true"></div>
     <header class="nav">
       <a class="mark" href="#top">YJ</a>
       <nav aria-label="Primary">
         <a href="#selected">Work</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="./resume.html">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -48,11 +58,23 @@
         </div>
       </section>
 
-      <section class="metrics" aria-label="Delivery metrics">
-        <article><strong>$1B+</strong><span>underlying value in enabled datasets</span></article>
-        <article><strong>$260K</strong><span>pipeline cost saved at Disney</span></article>
-        <article><strong>95%</strong><span>ingestion time saved after an overnight hotfix</span></article>
-        <article><strong>1M+</strong><span>contact-centre records processed daily</span></article>
+      <section class="metrics" aria-label="Delivery metrics from production work">
+        <article>
+          <strong>$1B+</strong>
+          <span>underlying value in enabled datasets</span>
+        </article>
+        <article>
+          <strong>$260K</strong>
+          <span>pipeline cost saved at Disney</span>
+        </article>
+        <article>
+          <strong>95%</strong>
+          <span>ingestion time saved after an overnight hotfix</span>
+        </article>
+        <article>
+          <strong>1M+</strong>
+          <span>contact-centre records processed daily</span>
+        </article>
       </section>
 
       <section id="selected" class="selected">
@@ -170,11 +192,117 @@
           <h2>Tools I use when vendor files have to land clean.</h2>
         </header>
         <div class="pills">
-          <span>Python</span><span>PySpark</span><span>SQL</span>
-          <span>Azure Databricks</span><span>Delta Lake</span><span>Snowflake</span>
-          <span>Azure Data Factory</span><span>ADLS</span><span>Azure Synapse</span>
-          <span>Airflow</span><span>Stonebranch</span><span>Axway</span>
-          <span>Git / Azure DevOps</span><span>Docker</span>
+          <span>Python</span>
+          <span>PySpark / Spark</span>
+          <span>SQL</span>
+          <span>Azure Databricks</span>
+          <span>Delta Lake</span>
+          <span>Snowflake</span>
+          <span>Azure Data Factory</span>
+          <span>ADLS</span>
+          <span>Azure Synapse</span>
+          <span>Airflow</span>
+          <span>Stonebranch</span>
+          <span>Axway</span>
+          <span>Git / Azure DevOps</span>
+          <span>Docker</span>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <header class="section-head">
+          <p class="eyebrow">GitHub projects</p>
+          <h2>Personal builds — editors, markets, scraping, and small systems.</h2>
+        </header>
+        <p class="lede">
+          Original repos from github.com/yashj302. The production lakehouse work stays at the client. These are the
+          public pieces.
+        </p>
+        <div class="project-grid">
+          <article>
+            <p class="kicker">C#</p>
+            <h3>Texditor-CSharp</h3>
+            <p>Desktop text editor with email integration — compose, attach, and send without leaving the document.</p>
+            <div class="repo-meta">
+              <span>★ 3</span>
+              <a href="https://github.com/yashj302/Texditor-CSharp" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">Python</p>
+            <h3>Hangman</h3>
+            <p>A small game with the usual loop: guess letters, track lives, print the gallows. Clean starter Python.</p>
+            <div class="repo-meta">
+              <span>★ 1</span>
+              <a href="https://github.com/yashj302/Hangman" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">CSS / JS</p>
+            <h3>Stock_vis</h3>
+            <p>Stock visualization and comparison — charts for watching names side by side instead of a raw table dump.</p>
+            <div class="repo-meta">
+              <span>Markets</span>
+              <a href="https://github.com/yashj302/Stock_vis" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">Python</p>
+            <h3>Python-Download-Manager</h3>
+            <p>Breaks a file into chunks and pulls them in parallel, the way a desktop download manager would.</p>
+            <div class="repo-meta">
+              <span>Networking</span>
+              <a href="https://github.com/yashj302/Python-Download-Manager" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">JavaScript</p>
+            <h3>gpt-live-voice-control</h3>
+            <p>Voice control around ChatGPT Live — speech in, actions out, without typing every turn.</p>
+            <div class="repo-meta">
+              <span>Browser</span>
+              <a href="https://github.com/yashj302/gpt-live-voice-control" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">JavaScript</p>
+            <h3>loan_stage_underconstruction_calc</h3>
+            <p>Calculator for staged under-construction loan disbursements — amounts due as the build progresses.</p>
+            <div class="repo-meta">
+              <span>Finance</span>
+              <a href="https://github.com/yashj302/loan_stage_underconstruction_calc" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">Python</p>
+            <h3>Traffic-Management-System</h3>
+            <p>Traffic-flow prototype in Python — signals, counts, and a simple control loop instead of a slide deck.</p>
+            <div class="repo-meta">
+              <span>Systems</span>
+              <a href="https://github.com/yashj302/Traffic-Management-System" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">Python</p>
+            <h3>DownloadingPDF-Scraping</h3>
+            <p>Finds PDFs on a page and pulls them down. Companion to Link-Extractor for harvest jobs.</p>
+            <div class="repo-meta">
+              <span>Scraping</span>
+              <a href="https://github.com/yashj302/DownloadingPDF-Scraping" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article>
+            <p class="kicker">Python</p>
+            <h3>Link-Extractor</h3>
+            <p>Walks a page and collects outbound links. Small utility used next to the PDF scraper.</p>
+            <div class="repo-meta">
+              <span>Scraping</span>
+              <a href="https://github.com/yashj302/Link-Extractor" target="_blank" rel="noreferrer">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="https://github.com/yashj302?tab=repositories" target="_blank" rel="noreferrer">All repositories</a>
         </div>
       </section>
 
@@ -184,10 +312,22 @@
           <h2>Certified on the platforms I run in production.</h2>
         </header>
         <div class="card-row">
-          <article><p class="kicker">Databricks</p><h3>Azure Databricks Data Engineer Associate</h3></article>
-          <article><p class="kicker">Microsoft</p><h3>Azure AI Engineer</h3></article>
-          <article><p class="kicker">Microsoft</p><h3>Azure Data Scientist</h3></article>
-          <article><p class="kicker">NIIT University · 2015–2019</p><h3>B.Tech. Computer Science · CGPA 7.92</h3></article>
+          <article>
+            <p class="kicker">Databricks</p>
+            <h3>Azure Databricks Data Engineer Associate</h3>
+          </article>
+          <article>
+            <p class="kicker">Microsoft</p>
+            <h3>Azure AI Engineer</h3>
+          </article>
+          <article>
+            <p class="kicker">Microsoft</p>
+            <h3>Azure Data Scientist</h3>
+          </article>
+          <article>
+            <p class="kicker">NIIT University · 2015–2019</p>
+            <h3>B.Tech. Computer Science · CGPA 7.92</h3>
+          </article>
         </div>
       </section>
 
@@ -205,6 +345,7 @@
         </ul>
       </section>
     </main>
+
     <footer>
       <p>Yash Jain · Senior Data Engineer · Abu Dhabi</p>
       <p>Public portfolio. Client systems and data stay there.</p>
