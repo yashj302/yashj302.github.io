@@ -1,0 +1,121 @@
+:root {
+  --ink: #071422;
+  --paper: #eef4f8;
+  --paper-2: #d7e4ee;
+  --azure: #1f6f9f;
+  --sky: #3d9cf0;
+  --muted: #4d6273;
+  --line: rgba(7, 20, 34, 0.12);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1100px 480px at 8% -8%, #c5def0 0%, transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, #cfe8d8 0%, transparent 50%),
+    var(--paper);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  line-height: 1.55;
+}
+.nav, main, footer { position: relative; z-index: 1; }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 6vw;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  backdrop-filter: blur(12px);
+  background: rgba(238, 244, 248, 0.92);
+  border-bottom: 1px solid var(--line);
+}
+.nav nav, .nav-cta { display: flex; gap: 1rem; align-items: center; }
+.mark {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 640;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+}
+a { color: var(--azure); }
+.nav a { text-decoration: none; color: var(--ink); font-size: 0.92rem; }
+.ghost { border: 1px solid var(--ink); padding: 0.4rem 0.8rem; }
+.hero, .work, .stack, .certs, .contact, .metrics, .selected, footer { padding: 4.5rem 6vw; }
+.hero { padding-top: 5.5rem; max-width: 58rem; }
+.work { max-width: 78rem; }
+.eyebrow, .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  color: var(--azure);
+  font-weight: 600;
+  margin: 0 0 0.8rem;
+}
+h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 640; line-height: 1.15; margin: 0 0 1rem; }
+h1 { font-size: clamp(2.1rem, 4.4vw, 3.8rem); }
+h2 { font-size: clamp(1.6rem, 2.6vw, 2.4rem); max-width: 34rem; }
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 44rem; }
+.cta-row { display: flex; gap: 0.8rem; margin-top: 2rem; flex-wrap: wrap; }
+.btn {
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  padding: 0.8rem 1.1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.btn-line { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-top: 0; }
+.metrics article, .cases article, .card-row article {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line);
+  padding: 1.2rem;
+}
+.metrics strong { display: block; font-family: Fraunces, Georgia, serif; font-size: 2rem; color: var(--azure); }
+.section-head { margin-bottom: 2.2rem; }
+.cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.cases p:last-child { color: var(--muted); margin: 0; }
+.timeline { list-style: none; padding: 0; margin: 0; display: grid; gap: 2.2rem; }
+.timeline > li {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.6rem;
+}
+.when { color: var(--muted); font-size: 0.92rem; }
+.what h3 { max-width: none; }
+.what ul { margin: 0.8rem 0 0; padding-left: 1.15rem; color: var(--muted); max-width: 52rem; }
+.what li { margin: 0.65rem 0; line-height: 1.6; }
+.pills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.pills span { border: 1px solid var(--ink); padding: 0.45rem 0.75rem; background: rgba(255, 255, 255, 0.4); }
+.card-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.card-row article { background: var(--paper-2); }
+.links { list-style: none; padding: 0; margin: 0; font-size: 1.2rem; }
+.links li { margin: 0.4rem 0; }
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.6rem;
+}
+@media (max-width: 960px) { .cases { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 860px) {
+  .metrics, .timeline > li, .card-row, .cases, footer {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  .nav nav { display: none; }
+}

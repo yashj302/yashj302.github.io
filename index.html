@@ -1,73 +1,213 @@
-<html>
-    <head>
-        <title>
-            Digital Portfolio
-        </title>
-    
-    <style type="text/css">
-        body{
-            background-image: url(http://hdqwalls.com/wallpapers/windows-10-dark-to.jpg);
-            background-size: cover;
-            height: 100%;
-            background-repeat: no-repeat;
-        }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yash Jain · Senior Data Engineer</title>
+    <meta
+      name="description"
+      content="Yash Jain is a Senior Data Engineer in Abu Dhabi. Azure Databricks, PySpark, Delta Lake, Snowflake, and market-data ingestion."
+    />
+    <meta name="author" content="Yash Jain" />
+    <link rel="canonical" href="https://yashj302.github.io/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,640&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="mark" href="#top">YJ</a>
+      <nav aria-label="Primary">
+        <a href="#selected">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="./resume.html">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="ghost" href="https://github.com/yashj302" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="ghost" href="https://www.linkedin.com/in/yashj302/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </header>
 
-        div div ul li{
-            display: inline;
-            background: grey;
-            border : solid grey 6px;
-            border-radius: 4px;
-            text-align: center;
-        }
-        li a{
-            color:white;
-            text-decoration: none;
-        }
-    </style>
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Senior Data Engineer · Abu Dhabi</p>
+        <h1>I put vendor market data into governed lakehouses that analytics teams can actually trust.</h1>
+        <p class="lede">
+          Eight years in Python, PySpark, and SQL on Azure Databricks and Delta Lake. Currently market-data
+          enablement for a global sovereign wealth fund. Previously Disney, Air Canada, and IBM.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="./resume.html">View resume</a>
+          <a class="btn btn-line" href="mailto:Yashj302@gmail.com">Email Yash</a>
+        </div>
+      </section>
 
-    </head>
-<body>
-    
-<div>
-    <div class="header">
-        <div>
-        <ul style="color: white; list-style-type: none;  float: right;">
-            <li>
-                <a href="Portfolio.html">Home</a>
-            </li>
-            &nbsp;
-            <li>
-                <a href="Portfolio.html">Portfolio</a>
-            </li>
-            &nbsp;
+      <section class="metrics" aria-label="Delivery metrics">
+        <article><strong>$1B+</strong><span>underlying value in enabled datasets</span></article>
+        <article><strong>$260K</strong><span>pipeline cost saved at Disney</span></article>
+        <article><strong>95%</strong><span>ingestion time saved after an overnight hotfix</span></article>
+        <article><strong>1M+</strong><span>contact-centre records processed daily</span></article>
+      </section>
 
-            <li>
-                <a href="Portfolio.html">Hobbies</a>
-            </li>
-            &nbsp;
-            <li>
-                <a href="Portfolio.html">Certifications</a>
-            </li>
-            &nbsp;
-            <li>
-                <a href="Portfolio.html">Contact Me!</a>
-            </li>
+      <section id="selected" class="selected">
+        <header class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Production data, not slideware.</h2>
+        </header>
+        <div class="cases">
+          <article>
+            <p class="kicker">ADIA · Intuitive.ai</p>
+            <h3>Public and private market data into the lakehouse</h3>
+            <p>Onboard Bloomberg, Refinitiv, Dasseti, GS-Quant, Barclays Prime Metals, Alexandria Technology, and Wolfe Research via Axway. Stonebranch quality checks after vendor delivery.</p>
+          </article>
+          <article>
+            <p class="kicker">Disney</p>
+            <h3>$260K off Spark jobs, GDPR-safe identities</h3>
+            <p>Conviva → Snowflake on PySpark, Airflow, and Databricks. CCPA/GDPR purge. Account-spinoff detection. Delta OPTIMIZE, VACUUM, deletion vectors.</p>
+          </article>
+          <article>
+            <p class="kicker">Air Canada</p>
+            <h3>1 million+ records/day, 95% faster after a leak</h3>
+            <p>Pod lead for contact-centre medallion batch and streaming. Overnight hotfix plus compaction recovered almost all ingestion time.</p>
+          </article>
+          <article>
+            <p class="kicker">TMF / Enate</p>
+            <h3>Payroll lakehouse with a quality framework</h3>
+            <p>Raw-to-curated ADF, Python quality emails, Databricks upserts and rejected-file handling on ADLS Delta and Parquet.</p>
+          </article>
+          <article>
+            <p class="kicker">Nedbank</p>
+            <h3>Trade and FX documents at 92% pairing accuracy</h3>
+            <p>Watson SDU, DataCap, Camelot, Flask, Docker. Clause diff down to one letter. 100+ documents per hour.</p>
+          </article>
+          <article>
+            <p class="kicker">IBM</p>
+            <h3>Chatbots and pipeline operations</h3>
+            <p>OpenAI chatbot on Azure. Watson Assistant for Camping World. Air Canada missing-data alerts and ADF firefighting.</p>
+          </article>
+        </div>
+      </section>
 
+      <section id="experience" class="work">
+        <header class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>Eight years across funds, media, airlines, banking, and retail.</h2>
+        </header>
+        <ol class="timeline">
+          <li>
+            <div class="when">Dec 2025 — Present</div>
+            <div class="what">
+              <h3>Senior Data Engineer, Market Data Ingestion · Intuitive.ai · ADIA</h3>
+              <ul>
+                <li>Working with a sovereign wealth fund on a data-enablement and market-data ingestion platform, onboarding public and private market data from external vendors into the enterprise lakehouse via Axway.</li>
+                <li>Design and build scalable ingestion and transformation pipelines in PySpark, Python, and SQL so delivery stays reliable and standardized.</li>
+                <li>Standardize multi-source vendor market data, including Bloomberg, Refinitiv, Dasseti, GS-Quant, Barclays Prime Metals, Alexandria Technology, and Wolfe Research, into consistent production datasets.</li>
+                <li>Build ingestion and processing workflows for managed corporate actions so downstream consumers get high-quality financial data.</li>
+                <li>Implement data quality checks in Stonebranch after vendor delivery to find anomalies and improve reliability of production datasets.</li>
+                <li>Enable datasets representing $1B+ in underlying value.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">Mar 2024 — Nov 2025</div>
+            <div class="what">
+              <h3>Senior Data Engineer, Identity Consumer Data · HappiestMinds · Disney</h3>
+              <ul>
+                <li>Developed multiple ETL pipelines in PySpark, ingesting Conviva data into Snowflake, deployed with Airflow, Azure Databricks, Python, and Thanos.</li>
+                <li>Designed a purge utility to remove CCPA/GDPR non-compliant records from Account, Identity, and consumer Profile tables.</li>
+                <li>Built account-spinoff logic to detect multiple accounts shared across devices and flag cross-device activity patterns.</li>
+                <li>Optimized running performance of multiple pipelines, reducing processing time and resource cost by USD 260,000.</li>
+                <li>Optimized Delta tables with auto-compaction, deletion vectors, VACUUM, and OPTIMIZE.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">Oct 2023 — Mar 2024</div>
+            <div class="what">
+              <h3>Senior Data Engineer, Global Payroll · HappiestMinds · TMF, Enate</h3>
+              <ul>
+                <li>Developed the raw-to-curated layer for Enate (agent tickets and SLA) as a batch ingestion pipeline in Azure Data Factory.</li>
+                <li>Built an end-to-end data quality framework in Python, including automatic email notification when checks failed for fields such as country and employee id.</li>
+                <li>Designed cloud ingestion, upsert logic, and rejected-file handling with SQL configuration in SQL Server, implemented in PySpark on Azure Databricks, hosted on ADLS as Delta Lake and Parquet.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">Sep 2021 — Sep 2023</div>
+            <div class="what">
+              <h3>Senior Data Engineer, Contact Centre (Pod Lead) · IBM · Air Canada</h3>
+              <ul>
+                <li>Delivered large ETL projects: batch pipelines (Amazon Connect, NiFi WFM, Loyalty, CRM) on a medallion architecture, and streaming pipelines in Python, Spark, and Azure Databricks.</li>
+                <li>Led the team and developed cloud ingestion for Contact Centre Management, processing 1 million+ records daily using ADF, Azure Synapse, and PySpark on Azure Data Lake.</li>
+                <li>Implemented an overnight hotfix for a data leak, then compaction, saving 95% of ingestion time.</li>
+                <li>Used Azure DevOps for version control and for tracking work items, tasks, and user stories.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="when">2019 — 2023</div>
+            <div class="what">
+              <h3>Data Scientist and Data Engineer · IBM</h3>
+              <ul>
+                <li>OpenAI chatbot on Azure with Flask, Docker, and Streamlit; Watson Assistant chatbot for Camping World.</li>
+                <li>Digitized bilateral trade and FX documents for Nedbank at 92% pairing accuracy using Watson SDU, DataCap, and Camelot.</li>
+                <li>Automated Air Canada missing-data alerts and file restructuring, saving 4+ hours of manual work.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="stack" class="stack">
+        <header class="section-head">
+          <p class="eyebrow">Stack</p>
+          <h2>Tools I use when vendor files have to land clean.</h2>
+        </header>
+        <div class="pills">
+          <span>Python</span><span>PySpark</span><span>SQL</span>
+          <span>Azure Databricks</span><span>Delta Lake</span><span>Snowflake</span>
+          <span>Azure Data Factory</span><span>ADLS</span><span>Azure Synapse</span>
+          <span>Airflow</span><span>Stonebranch</span><span>Axway</span>
+          <span>Git / Azure DevOps</span><span>Docker</span>
+        </div>
+      </section>
+
+      <section id="certs" class="certs">
+        <header class="section-head">
+          <p class="eyebrow">Credentials</p>
+          <h2>Certified on the platforms I run in production.</h2>
+        </header>
+        <div class="card-row">
+          <article><p class="kicker">Databricks</p><h3>Azure Databricks Data Engineer Associate</h3></article>
+          <article><p class="kicker">Microsoft</p><h3>Azure AI Engineer</h3></article>
+          <article><p class="kicker">Microsoft</p><h3>Azure Data Scientist</h3></article>
+          <article><p class="kicker">NIIT University · 2015–2019</p><h3>B.Tech. Computer Science · CGPA 7.92</h3></article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <header class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Hiring for Databricks, lakehouse, or market-data engineering? Write to me.</h2>
+        </header>
+        <ul class="links">
+          <li><a href="./resume.html">Resume (PDF)</a></li>
+          <li><a href="mailto:Yashj302@gmail.com">Yashj302@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/yashj302/" target="_blank" rel="noreferrer">linkedin.com/in/yashj302</a></li>
+          <li><a href="https://github.com/yashj302" target="_blank" rel="noreferrer">github.com/yashj302</a></li>
+          <li><a href="tel:+971503148799">+971-503148799</a></li>
         </ul>
-    </div>
-    <div>
-        <img src="https://txt-dynamic.static.1001fonts.net/txt/dHRmLjgwLmZmZi5XV0Z6YUNCS1lXbHUuMAAA/fluoxetine.regular.png" style="width: 300px; height: 50px; margin-left: 20px;">
-    </div>
-    </div>
-    <div class="body">
-        <br><br><br>
-        <img src="https://cdn2.vectorstock.com/i/1000x1000/72/51/stick-figure-stickman-icon-pictogram-simple-vector-18167251.jpg" style="float: left; width: 300px; height: 400px; border-radius: 100px;">
-        <h1 style="">Interests</h1>
-    </div>
-</div>
-
-</div>
-
-</body>
-
+      </section>
+    </main>
+    <footer>
+      <p>Yash Jain · Senior Data Engineer · Abu Dhabi</p>
+      <p>Public portfolio. Client systems and data stay there.</p>
+    </footer>
+  </body>
 </html>
