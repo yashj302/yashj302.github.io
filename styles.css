@@ -104,8 +104,18 @@ a {
 .metrics,
 .selected,
 .projects,
+.clients,
 footer {
   padding: 4.5rem 6vw;
+}
+
+.clients {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.clients h2 {
+  margin-bottom: 1.2rem;
 }
 
 .work {
