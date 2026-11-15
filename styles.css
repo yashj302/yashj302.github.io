@@ -248,6 +248,26 @@ h2 {
   font-weight: 500;
 }
 
+.download-pair {
+  margin: 0 0 1.5rem;
+}
+
+.pair-head h3 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.45rem;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.pair-head p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 42rem;
+  margin: 0 0 1rem;
+}
+
+.pair-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
 .projects {
   background: rgba(15, 118, 110, 0.07);
   border-top: 1px solid var(--line);
@@ -437,6 +457,7 @@ footer {
   .card-row,
   .cases,
   .project-grid,
+  .pair-grid,
   .award-grid,
   .cert-grid,
   footer {
