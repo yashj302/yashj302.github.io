@@ -327,46 +327,38 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 
+.awards .lede {
+  margin-bottom: 2rem;
+}
+
 .award-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.award-grid figure {
-  margin: 0;
+.award-card {
   background: var(--wash);
   border: 1px solid var(--line);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  padding: 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.award-grid img {
-  width: 100%;
-  height: 14rem;
-  object-fit: cover;
-  object-position: center top;
-  background: #fff;
-  border-bottom: 1px solid var(--line);
+.award-card:hover {
+  border-color: var(--ink);
 }
 
-.award-grid img.shot-left {
-  object-position: left top;
-}
-
-.award-grid figcaption {
-  padding: 1.1rem 1.2rem 1.2rem;
-}
-
-.award-grid h3 {
+.award-card h3 {
   font-size: 1.15rem;
   margin-bottom: 0.4rem;
 }
 
-.award-grid p:last-child {
+.award-card p:last-child {
   margin: 0;
-  color: var(--muted);
+  color: var(--teal);
+  font-weight: 500;
 }
 
 .links {
